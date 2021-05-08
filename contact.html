@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./contact-style.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="logo" href="./index.html">Aero<p>Fit</p></a>
+        <ul class="list-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Actividades</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <div id="img-top"></div>
+
+    <div class="container">
+        <div class="main-section">
+            <h1>Completa los siguientes campos</h1>
+            <form id="mainform" action="#" method="post">
+                <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                <textarea name="consult" id="consult" cols="65" rows="10" placeholder="Consulta"></textarea>
+                <div id="btn">
+                    <input id="send" type="submit" value="Enviar Mensaje">
+                    <input id="delete" type="button" value="Borrar Mensaje">
+                </div>
+            </form>
+        </div>
+
+        <div id="contact-info">
+            <h2>Info de Contacto</h2>
+            <p>
+                <strong>Para cuidarte y cuidarnos, respetamos el distanciamiento social.</strong> Mientras dure la emergencia sanitaria, trasladamos todas las actividades presenciales a nuestra <strong>Aula Virtual interactiva por Zoom.Brindamos clases online en vivo.</strong>
+            </p>
+
+            <p class="title-info"><strong>Direccion:</strong></p>
+            <p class="info">Alvear-4520</p>
+
+            <p class="title-info"><strong>Telefono:</strong></p>
+            <p class="info">(351)4256321</p>
+
+            <p class="title-info"><strong>Email:</strong></p>
+            <p class="info">mail@gmail.com</p>
+
+            <div id="social">
+                <a href="#">pt</a>
+                <a href="#">fb</a>
+                <a href="#">ig</a>
+                <a href="#">tw</a>
+                <a href="#">ln</a>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <footer>
+        <a class="logo footer" href="./index.html">Aero<p>Fit</p></a>
+        
+            <p class="title-info">Direccion:</p>
+            <p  class="info">Alvear 4520</p>
+            <p class="title-info">Teléfono:</p>
+            <p class="info">(351)-4256321</p>
+            <p class="title-info">Email:</p>
+            <p class="info">mail@gmail.com</p>
+        
+            <div id="social">
+                <a href="#">pt</a>
+                <a href="#">fb</a>
+                <a href="#">ig</a>
+                <a href="#">tw</a>
+                <a href="#">ln</a>
+            </div>
+        
+        <ul class="list-footer">
+            <li><a href="./index.html">Home</a>Home</li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Actividades</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+        
+        <p id="date-time-now"></p>
+    </footer>
+    <script src="./contact-form.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

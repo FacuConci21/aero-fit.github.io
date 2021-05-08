@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/*Variables*/
+:root {
+  --magenta: #f03271;
+  --orange: #e6852e;
+  --blue: #65b7cf;
+  --violet: #8b7597;
+  --yellow: #f0d732;
+  --green: #c2ca36;
+}
+body {
+  width: 100%;
+  height: auto;
+}
+/*Navbar*/
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px 75px;
+  text-decoration: none;
+  color: black;
+}
+
+.logo p {
+  color: var(--magenta);
+}
+.list-nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin: 0 100px;
+}
+
+.list-nav li {
+  list-style: none;
+}
+
+.list-nav li a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 25px;
+}
+
+.list-nav li a:hover {
+  color: var(--magenta);
+  text-decoration: underline;
+}
+
+/*Banner*/
+
+#banner {
+  width: 100%;
+  height: 65vh;
+  background-image: url("./imagenes/pilates-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Main*/
+
+/*Services section*/
+.service-section {
+  padding: 50px;
+}
+.service-section h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.service-section h1 p {
+  margin: 0 5px;
+  color: var(--magenta);
+}
+.services_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  height: 250px;
+  margin: 40px 10px;
+}
+
+.card p {
+  color: gray;
+  font-weight: lighter;
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.blue {
+  color: var(--blue);
+}
+.green {
+  color: var(--green);
+}
+.yellow {
+  color: var(--yellow);
+}
+.violet {
+  color: var(--violet);
+}
+.magenta {
+  color: var(--magenta);
+}
+/*Benefits section*/
+.benefits-section {
+  padding: 50px;
+  border-bottom: 4px solid var(--magenta);
+}
+
+.benefits-section h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.benefits-section h1 p {
+  margin: 0 5px;
+  color: var(--magenta);
+}
+.benefits_container {
+  background-image: url("./imagenes/benefits.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__left-container,
+.cards__rigth-container {
+  width: 30%;
+}
+
+.card-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.circle {
+  position: relative;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 0 40px 0 0;
+  background: var(--magenta);
+}
+
+.circle img {
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.card-rigth .card-title {
+  justify-content: flex-end;
+}
+
+.card-rigth .circle {
+  margin: 0 0 0 40px;
+}
+.cards__left-container .card-left {
+  text-align: left;
+  margin: 25px 0;
+}
+
+.cards__rigth-container .card-rigth {
+  text-align: right;
+  margin: 25px 0;
+}
+
+.card-left p,
+.card-rigth p {
+  line-height: 30px;
+  color: gray;
+  font-weight: 500;
+}
+/*Footer*/
+
+footer {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  color: white;
+}
+
+.title-info {
+  color: var(--magenta);
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.list-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  margin: 40px 0;
+}
+
+.list-footer li {
+  list-style: none;
+}
+
+.list-footer li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 25px;
+}
+
+footer #date-time-now {
+  font-size: 15px;
+  position: absolute;
+  bottom: 6%;
+  right: 5%;
+  transform: translate(-5%, -100%);
+}
