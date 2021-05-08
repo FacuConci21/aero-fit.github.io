@@ -4,21 +4,26 @@ const deleteButton = document.getElementById("delete");
 const formElements = mainForm.elements;
 
 function resetFormContent(e) {
+
   formElements.fullname.value = "";
   formElements.email.value = "";
   formElements.asunto.value = "";
   formElements.consult.value = "";
+  
 }
 
 const validateFullname = (e) => {
   if (formElements.fullname.value) {
     const names = formElements.fullname.value.split(" ");
+    
     if (names.length < 2) {
       alert("Completa el campo de nombre y apellido con tu nombre completo.");
       e.preventDefault();
       return 0;
     }
+    
     return 1;
+
   } else {
     alert("Completa el campo de nombre y apellido con tu nombre completo.");
     e.preventDefault();
@@ -35,7 +40,9 @@ const validateEmail = (e) => {
       e.preventDefault();
       return 0;
     }
+
     return 1;
+
   } else {
     alert("Completa el campo de email.");
     e.preventDefault();
@@ -44,13 +51,16 @@ const validateEmail = (e) => {
 };
 
 const validateConsult = (e) => {
+
   if (formElements.consult.value) {
     if (formElements.consult.value.length > 200) {
       alert("Consulta demasiado larga (mas de 200 caracteres).");
       e.preventDefault();
       return 0;
     }
+
     return 1;
+
   } else {
     alert("La consulta esta vacia.");
     e.preventDefault();
@@ -59,19 +69,21 @@ const validateConsult = (e) => {
 };
 
 const validateAsunto = (e) => {
+
   if (formElements.asunto.value == "") {
     alert("El campo asunto esta vacio.");
     e.preventDefault();
     return 0;
   }
+
   return 1;
 };
 
 const validations = (e) => {
   e.preventDefault();
-  if (validateFullname(e) && validateEmail(e) && validateConsult(e) && validateAsunto(e) ) {
-    resetFormContent(e);
+  if (validateFullname(e) && validateEmail(e) && validateConsult(e) && validateAsunto(e)) {
     alert("Mensaje enviado!");
+    resetFormContent(e);
   }
 };
 
